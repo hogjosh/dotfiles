@@ -1,0 +1,4 @@
+# This is Git's per-user configuration file.
+[core]
+user = Josh Hogan
+email = josh.hogan@me.com
