@@ -5,3 +5,5 @@ email = josh.hogan@me.com
 [user]
 	name = Josh Hogan
 	email = josh.hogan@me.com
+[push]
+	default = simple
