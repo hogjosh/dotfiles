@@ -2,3 +2,6 @@
 [core]
 user = Josh Hogan
 email = josh.hogan@me.com
+[user]
+	name = Josh Hogan
+	email = josh.hogan@me.com
