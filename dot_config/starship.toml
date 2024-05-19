@@ -1,0 +1,23 @@
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[golang]
+disabled = true
+
+[rust]
+disabled = true
+
+[aws]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[elixir]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
