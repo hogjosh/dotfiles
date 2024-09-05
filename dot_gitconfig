@@ -1,0 +1,29 @@
+[user]
+	name = Josh Hogan
+	email = josh.hogan@fastradius.com
+[init]
+	defaultBranch = main
+[diff]
+	tool = difftastic
+[difftool "ksdiff"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "difft"]
+	cmd = difft "$LOCAL" "$REMOTE"
+[difftool]
+	prompt = false
+[merge]
+	tool = ksdiff
+[mergetool "ksdiff"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[alias]
+	difft = -c diff.tool=difft difftool
+	diffk = -c diff.tool=ksdiff difftool
+	alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
+	unalias-master-as-main = !git switch master && git symbolic-ref -d refs/heads/main && git symbolic-ref -d refs/remotes/origin/main
+[core]
+	excludesfile = ~/.gitignore
+[pager]
+  difftool = true
