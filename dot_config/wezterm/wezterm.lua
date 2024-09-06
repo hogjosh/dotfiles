@@ -9,4 +9,3 @@ config.font = wezterm.font({
 config.font_size = 15.0
 
 return config
-
