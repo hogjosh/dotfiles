@@ -73,7 +73,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	vi-mode
 	brew
-	git
 	history
 	terraform
   aws
@@ -119,6 +118,7 @@ alias cat="bat"
 alias ls="exa"
 alias z="zellij"
 alias gs="git status"
+alias gl="git log --oneline"
 alias asdf="mise"
 alias awslocal="AWS_PROFILE=localstack aws --endpoint-url=http://localhost:4566"
 
