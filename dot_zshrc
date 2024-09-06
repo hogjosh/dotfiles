@@ -108,8 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshrc="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias nvim="TERM=wezterm nvim"
 alias vim="nvim"
+alias chz="chezmoi"
 alias vi="nvim"
 alias j="just"
 alias c="cargo"
