@@ -74,7 +74,6 @@ plugins=(
 	vi-mode
 	brew
 	history
-	terraform
   aws
 )
 
