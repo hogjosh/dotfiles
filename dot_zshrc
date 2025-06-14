@@ -123,6 +123,7 @@ alias awslocal="AWS_PROFILE=localstack aws --endpoint-url=http://localhost:4566"
 
 export VISUAL="$HOME/.local/share/bob/nvim-bin/nvim"
 export EDITOR="$VISUAL"
+export BLOCKIT_EMAIL="josh.hogan@blockitnow.com"
 
 # Reasonable? way to change omz pager behavior
 # eg. git diff, git log - stop using "alternate screen"
@@ -138,5 +139,12 @@ eval "$(zellij setup --generate-auto-start zsh)"
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/imagemagick@6/bin:$PATH"
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/hogan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hogan/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/hogan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hogan/google-cloud-sdk/completion.zsh.inc'; fi

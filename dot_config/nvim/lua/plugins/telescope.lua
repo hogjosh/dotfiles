@@ -2,7 +2,7 @@
 -- https://github.com/nvim-telescope/telescope.nvim
 return {
   "nvim-telescope/telescope.nvim",
-  enabled = true,
+  enabled = false,
   keys = function()
     local builtin = require("telescope.builtin")
 
